@@ -46,7 +46,7 @@ const SliderCard = () => {
       <Slider {...settings}>
         {card.map(({ id, pic, cLogo, words, name }) => (
           <div>
-            <div className="flex justify-between bg-zinc-800 items-center md:h-[400px] lg:h-[450px] h-[550px]  p-12  gap-4 rounded-3xl mx-6">
+            <div key={id} className="flex justify-between bg-zinc-800 items-center md:h-[400px] lg:h-[450px] h-[550px]  p-12  gap-4 rounded-3xl mx-6">
               <div className="LEFT grid place-content-center w-[800px]">
                 <img src={pic} alt="ProfilePic" className="rounded-full" />
               </div>
